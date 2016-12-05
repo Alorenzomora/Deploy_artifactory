@@ -17,8 +17,8 @@ node {
 		def uploadSpec = """{
 				"files": [
 						{
-							"pattern": "Dockerfile",
-							"target": "dockerfiles/${envs.pipelineName}/"
+							"pattern": "Deploy_artifactory.txt",
+							"target":  "test-generic"
 						}
 					]
 				}"""

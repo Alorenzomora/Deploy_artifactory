@@ -25,7 +25,7 @@ node {
 				
 		def buildInfo = Artifactory.newBuildInfo()
 		buildInfo.setName "test-generic/Deploy_artifactory.txt"
-		def server = Artifactory.server 'artifactory-bsi'
+		def server = Artifactory.server 'art-1'
 		server.upload spec: uploadSpec, buildInfo: buildInfo
 		server.publishBuildInfo buildInfo
     }

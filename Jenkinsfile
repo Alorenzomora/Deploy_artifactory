@@ -6,7 +6,7 @@ import jenkins.model.*
 	
 node {
   stage ('Create a file'){
-  writeFile file: "Deploy_artifactory.txt"
+  	writeFile file: "Deploy_artifactory.txt"
   
   }
   stage('Deploy_Artifact'){
@@ -24,7 +24,7 @@ node {
 				}"""
 				
 		def buildInfo = Artifactory.newBuildInfo()
-		buildInfo.setName "Test/Dockerfile"
+		buildInfo.setName "test-generic/Deploy_artifactory.txt"
 		def server = Artifactory.server 'artifactory-bsi'
 		server.upload spec: uploadSpec, buildInfo: buildInfo
 		server.publishBuildInfo buildInfo

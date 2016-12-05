@@ -1,5 +1,3 @@
-# Build a Jenkinsfile and deploy to artifactory
-
 node {
   stage ('Create a file'){
   writefile: "Deploy_artifactory.txt", Test: "Test 05/12/2016"

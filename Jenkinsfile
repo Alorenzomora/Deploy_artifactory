@@ -1,6 +1,6 @@
 node {
   stage ('Create a file'){
-  writefile: "Deploy_artifactory.txt", Test: "Test 05/12/2016"
+  writeFile file: "Deploy_artifactory.txt", test: "Test 05/12/2016"
   
   }
   stage('Deploy_Artifact'){

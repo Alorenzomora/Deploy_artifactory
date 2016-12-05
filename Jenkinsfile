@@ -1,3 +1,9 @@
+#!groovy
+import hudson.*
+import hudson.model.*
+import jenkins.*
+import jenkins.model.*
+	
 node {
   stage ('Create a file'){
   writeFile file: "Deploy_artifactory.txt", test: "Test 05/12/2016"

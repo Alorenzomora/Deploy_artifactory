@@ -6,7 +6,7 @@ import jenkins.model.*
 	
 node {
   stage ('Create a file'){
-  writeFile file: "Deploy_artifactory.txt", test: "Test 05/12/2016"
+  writeFile file: "Deploy_artifactory.txt"
   
   }
   stage('Deploy_Artifact'){
